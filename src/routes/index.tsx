@@ -1,5 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SmoothScroll } from "@/components/SmoothScroll";
+import { CustomCursor } from "@/components/CustomCursor";
+import { FloatingParticles } from "@/components/FloatingParticles";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
@@ -32,6 +34,8 @@ function Index() {
   return (
     <main className="dark relative bg-background text-foreground noise">
       <SmoothScroll />
+      <CustomCursor />
+      <FloatingParticles />
       <Navbar />
       <Hero />
       <About />
